@@ -3,6 +3,7 @@ import {AffairType, deleteAffair} from '../HW2'
 
 let initialState: AffairType[]
 
+
 beforeEach(() => {
     initialState = [
         {_id: 1, name: 'React', priority: 'high'},
@@ -16,7 +17,7 @@ beforeEach(() => {
 
 test('delete 0', () => {
     const newState = deleteAffair(initialState, 0)
-    expect(newState.length).toBe(6)
+    expect(newState.length).toBe(5)
 })
 test('delete 1', () => {
     const newState = deleteAffair(initialState, 1)

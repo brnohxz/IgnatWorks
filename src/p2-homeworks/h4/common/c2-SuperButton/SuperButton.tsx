@@ -10,12 +10,11 @@ type SuperButtonPropsType = DefaultButtonPropsType & {
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
     {
-        red, className,
+        red,
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
-    const finalClassName = `${red ? s.red : s.default} ${className}`
-
+    const finalClassName = `${red ? s.red : s.default} ${restProps.className}`
     return (
         <button
             className={finalClassName}

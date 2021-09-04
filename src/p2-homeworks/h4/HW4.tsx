@@ -12,12 +12,17 @@ function HW4() {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(text)
+            setText('')// если нет ошибки показать текст
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setChecked(e.currentTarget.checked)
+        console.log('testOnChange started')
+    }
+    const preventAction = () => {}
 
     return (
         <div>
@@ -30,24 +35,19 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
                 />
-
                 <SuperInputText
                     className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
-
                 {/*----------------------------------------------------*/}
 
                 <SuperButton>
                     default
                 </SuperButton>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
+                <SuperButton red // пропсу с булевым значением не обязательно указывать true
+                    onClick={showAlert}>delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 <SuperButton disabled>
@@ -56,10 +56,7 @@ function HW4() {
 
                 {/*----------------------------------------------------*/}
 
-                <SuperCheckbox
-                    checked={checked}
-                    onChangeChecked={setChecked}
-                >
+                <SuperCheckbox checked={checked} onChangeChecked={setChecked}>
                     some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
 
@@ -73,6 +70,9 @@ function HW4() {
             {/*<AlternativeSuperButton/>*/}
             {/*<AlternativeSuperCheckbox/>*/}
             <hr/>
+            <button onClick={()=>{
+                console.log(checked)
+            }}></button>
         </div>
     )
 }

@@ -1,3 +1,135 @@
+.message {}
+/*body {*/
+/*    font-family: helvetica;*/
+/*    display: flex ;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+.chat {
+    width: 300px;
+    border: solid 1px #EEE;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.messages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 .message {
+    border-radius: 20px;
+    padding: 23px 15px 25px 15px;
+    margin-top: 5px;
+    /*margin-bottom: 5px;*/
+    display: inline-block;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.yours {
+    align-items: flex-start;
+}
+
+.yours:before {
 
 }
+
+.yours .message {
+    /*margin-right: 25%;*/
+    background-color: #EEE;
+    position: relative;
+}
+
+.yours .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #EEE;
+    border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+}
+
+.mine {
+    align-items: flex-end;
+}
+
+.mine .message {
+    color: white;
+    margin-left: 25%;
+    background: rgb(0, 120, 254);
+    position: relative;
+}
+
+.mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: rgb(0, 120, 254);
+    border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+}
+
+.userPNG {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.MessageWrapper {
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.MessageTime{
+    position: absolute;
+    font-size: 10px;
+    right: 12px;
+    bottom: 8px;
+    color: #808080;
+}
+
+.senderName {
+    position: absolute;
+    font-size: 10px;
+    left: 56px;
+    top: 12px;
+    color: #808080;
+}
+
