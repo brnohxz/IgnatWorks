@@ -31,7 +31,7 @@ export const Navbar = (props:NavbarPropsType) => {
 
     return <>
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={openSideBar}>
                         <MenuIcon/>
