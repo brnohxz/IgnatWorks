@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import s from './App.module.css'
 import HW5 from "../../../p2-homeworks/h5/HW5";
 import {Navbar} from "../../../p2-homeworks/h5/Navbar";
-import {Sidebar} from "../../../p2-homeworks/h5/Sidebar";
+import Sidebar from "../../../p2-homeworks/h5/Sidebar";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     return (
         <div className={s.App}>
             <Navbar openSideBar={setSideBarStatus}/>
-            <Sidebar isOpen={sideBarStatus}/>
+            <Sidebar isOpen={sideBarStatus} openSideBar={setSideBarStatus}/>
             <HW5/>
         </div>
     )

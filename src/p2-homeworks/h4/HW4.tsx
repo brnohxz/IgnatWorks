@@ -22,7 +22,7 @@ function HW4() {
         setChecked(e.currentTarget.checked)
         console.log('testOnChange started')
     }
-    const preventAction = () => {}
+    // const preventAction = () => {}
 
     return (
         <div>
@@ -70,9 +70,6 @@ function HW4() {
             {/*<AlternativeSuperButton/>*/}
             {/*<AlternativeSuperCheckbox/>*/}
             <hr/>
-            <button onClick={()=>{
-                console.log(checked)
-            }}></button>
         </div>
     )
 }

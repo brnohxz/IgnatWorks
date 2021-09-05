@@ -2,12 +2,12 @@ import React from 'react'
 import {Redirect, Route, Switch} from "react-router-dom";
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
-import * as path from "path";
 import {Junior} from "./pages/Junior";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
-    JUNIOR: '/junior'
+    JUNIOR: '/junior',
+    JUNIOR_PLUS:'/junior-plus'
 }
 
 function Routes() {

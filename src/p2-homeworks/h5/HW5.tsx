@@ -1,20 +1,16 @@
 import React from 'react'
-import Header from './Header'
 import Routes from './Routes'
 import {HashRouter} from "react-router-dom";
+import {Container} from "@material-ui/core";
 
 function HW5() {
     return (
         <div>
-            {/*в gh-pages лучше работает HashRouter*/}
-            <HashRouter>
-
-            <Header/>
-                {/*{Здесь мы оставим нав линки}*/}
-
-            <Routes/>
-                {/*{Здесь будет отрисовка самой компоненты}*/}
-            </HashRouter>
+            <Container maxWidth="sm">
+                <HashRouter>
+                    <Routes/>
+                </HashRouter>
+            </Container>
         </div>
     )
 }
