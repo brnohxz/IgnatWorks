@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IgnatWorks/static/css/main.4371d381.chunk.css",
+    "main.css": "/IgnatWorks/static/css/main.5429b10a.chunk.css",
     "main.js": "/IgnatWorks/static/js/main.64f7a9a8.chunk.js",
     "main.js.map": "/IgnatWorks/static/js/main.64f7a9a8.chunk.js.map",
     "runtime-main.js": "/IgnatWorks/static/js/runtime-main.18920fea.js",
@@ -8,15 +8,15 @@
     "static/js/2.c298605d.chunk.js": "/IgnatWorks/static/js/2.c298605d.chunk.js",
     "static/js/2.c298605d.chunk.js.map": "/IgnatWorks/static/js/2.c298605d.chunk.js.map",
     "index.html": "/IgnatWorks/index.html",
-    "precache-manifest.fd826465e09ac83b83caa252dd087c5a.js": "/IgnatWorks/precache-manifest.fd826465e09ac83b83caa252dd087c5a.js",
+    "precache-manifest.cb96d0f836ffb112d7ebda263e10ec5d.js": "/IgnatWorks/precache-manifest.cb96d0f836ffb112d7ebda263e10ec5d.js",
     "service-worker.js": "/IgnatWorks/service-worker.js",
-    "static/css/main.4371d381.chunk.css.map": "/IgnatWorks/static/css/main.4371d381.chunk.css.map",
+    "static/css/main.5429b10a.chunk.css.map": "/IgnatWorks/static/css/main.5429b10a.chunk.css.map",
     "static/js/2.c298605d.chunk.js.LICENSE.txt": "/IgnatWorks/static/js/2.c298605d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.18920fea.js",
     "static/js/2.c298605d.chunk.js",
-    "static/css/main.4371d381.chunk.css",
+    "static/css/main.5429b10a.chunk.css",
     "static/js/main.64f7a9a8.chunk.js"
   ]
 }
