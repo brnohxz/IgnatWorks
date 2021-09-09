@@ -10,7 +10,7 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        setValue(restoreState<string>('editable-span-value',value))
     }
 
     return (
@@ -27,7 +27,7 @@ function HW6() {
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>
-            <SuperButton onClick={restore}>restore</SuperButton>
+            <SuperButton red onClick={restore}>restore</SuperButton>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
