@@ -1,0 +1,7 @@
+.defaultSpan{
+    color: #326bb2;
+}
+
+.defaultSpan:before{
+    content: '\270E';
+}

@@ -12,7 +12,7 @@ export const PATH = {
 
 function Routes() {
     return (
-        <div>
+        <>
             {/*Switch выбирает первый подходящий роут*/}
             <Switch>
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
@@ -26,7 +26,7 @@ function Routes() {
                 <Route render={() => <Error404/>}/>
 
             </Switch>
-        </div>
+        </>
     )
 }
 

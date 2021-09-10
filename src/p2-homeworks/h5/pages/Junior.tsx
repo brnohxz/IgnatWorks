@@ -1,5 +1,6 @@
 import React from "react";
+import HW6 from "../../h6/HW6";
 
 export const Junior = () => {
-    return <div>Now u can see other works</div>
+    return <HW6/>
 }

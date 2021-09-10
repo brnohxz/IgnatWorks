@@ -7,9 +7,10 @@ import Sidebar from "../../../p2-homeworks/h5/Sidebar";
 
 function App() {
     const [sideBarStatus,setSideBarStatus] = useState(false)
+
     return (
         <div className={s.App}>
-            <Navbar openSideBar={setSideBarStatus}/>
+            <Navbar openSideBar={setSideBarStatus} />
             <Sidebar isOpen={sideBarStatus} openSideBar={setSideBarStatus}/>
             <HW5/>
         </div>

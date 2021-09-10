@@ -1,16 +1,14 @@
 import React from 'react'
 import Routes from './Routes'
 import {HashRouter} from "react-router-dom";
-import {Container} from "@material-ui/core";
+import s from './HW5.module.css'
 
 function HW5() {
     return (
-        <div>
-            <Container maxWidth="sm">
+        <div className={s.hw5}>
                 <HashRouter>
                     <Routes/>
                 </HashRouter>
-            </Container>
         </div>
     )
 }
