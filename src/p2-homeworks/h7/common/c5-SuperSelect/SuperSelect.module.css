@@ -1,0 +1,15 @@
+.default {
+    border-radius: 5px;
+    border: none;
+    min-width: 70px;
+    min-height: 30px;
+    text-align: center;
+    background-color: #e5f3ff;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.default:focus{
+    outline: none;
+}

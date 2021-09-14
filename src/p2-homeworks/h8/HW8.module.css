@@ -1,0 +1,9 @@
+.tableWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.tableItem{
+    display: flex;
+    justify-content: space-between;
+}
