@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import {checkAC, homeWorkReducer, sortUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from './HW8.module.css'
 // export type UserType =
@@ -21,7 +21,7 @@ function HW8() {
     const [people, setPeople] = useState<initialPeopleObject[]>(initialPeople) // need to fix any
 
     // need to fix any
-    const finalPeople = people.map((p: any) => (
+    const finalPeople = people.map((p: initialPeopleObject) => (
         <div key={p._id} className={s.tableItem}>
             <div>
                 {p.name}
@@ -32,8 +32,9 @@ function HW8() {
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
-
+    const sortAdult = () => setPeople(homeWorkReducer(initialPeople, checkAC(18)))
+    const sortUP = () => setPeople(homeWorkReducer(initialPeople,sortUpAC('up')))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople,sortUpAC('down')))
     return (
         <div style={{minWidth:250}}>
             <hr/>
@@ -41,12 +42,11 @@ function HW8() {
 
             {/*should work (должно работать)*/}
             <div className={s.tableWrap}>{finalPeople}</div>
-
-
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-            check 18
-
+            <div className={s.buttonGroup}>
+            <div><SuperButton onClick={sortAdult}>sort adult</SuperButton></div>
+            <div><SuperButton onClick={sortUP}>sort up</SuperButton></div>
+            <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
