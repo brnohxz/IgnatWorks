@@ -52,7 +52,7 @@ function HW8() {
             {/*should work (должно работать)*/}
             {/*<div className={s.tableWrap}>{finalPeople}</div>*/}
 
-            <TableContainer component={Paper} style={{maxWidth:350,margin:30}}>
+            <TableContainer component={Paper} style={{maxWidth:350,marginBottom:10,marginTop:10}}>
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
