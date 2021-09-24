@@ -1,5 +1,7 @@
 import React from 'react'
 import Clock from './Clock'
+import AlternativeClock from "./AlternativeClock";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function HW9() {
     return (
@@ -9,6 +11,7 @@ function HW9() {
 
             {/*should work (должно работать)*/}
             <Clock/>
+            <AlternativeClock/>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
