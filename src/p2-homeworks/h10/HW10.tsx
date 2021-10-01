@@ -31,7 +31,7 @@ function HW10() {
                     <LinearProgress />
                 ) : (
                     <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                        <SuperButton onClick={setLoading}>set loading..</SuperButton>
                     </div>
                 )
             }
