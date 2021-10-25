@@ -8,7 +8,7 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import {NavLink} from 'react-router-dom';
-
+import PATH from './Routes'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -58,6 +58,9 @@ export default function SidebarList(props:SidebarListPropsType) {
             </ListItem></NavLink>
             <NavLink activeClassName={classes.activeLinkStyles} className={classes.fontStyle} to={'/junior'}><ListItem button onClick={()=>props.closeOnClick(false)}>
                 <ListItemText primary="Junior" />
+            </ListItem></NavLink>
+            <NavLink activeClassName={classes.activeLinkStyles} className={classes.fontStyle} to={'/junior-plus'}><ListItem button onClick={()=>props.closeOnClick(false)}>
+                <ListItemText primary="Junior Plus" />
             </ListItem></NavLink>
             <ListItem button onClick={handleClick}>
                 <ListItemText primary="Not ready pages" />
